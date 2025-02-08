@@ -1,0 +1,20 @@
+ID,Nome,Data da Compra,Valor da Compra,Custo Total da Propriedade,Categoria,Foto,Status,Vida Útil Restante,Depreciação,Valor de Uso Mensal,Valor Residual,Tempo de Vida Total,Manutenção Total,Garantia Restante
+4,babu,2023-01-01,"R$ 1,111,110.00","R$ 1,111,110.00",santana,WhatsApp Image 2025-01-18 at 09.43.23.jpeg,Indisponível,0 meses,"R$ 1,111,110.00","R$ 44,444.40",R$ 0.00,25 meses,R$ 0.00,0 meses
+5,daniel,2023-12-01,"R$ 111,111.00","R$ 111,111.00",castro,435fc35989eb448b98fc9165d432c787.jpeg,Em Manutenção,10 meses,"R$ 64,814.75","R$ 7,936.50","R$ 46,296.25",14 meses,R$ 0.00,9 meses
+4,claudio,2023-02-01,"R$ 111,100.00","R$ 111,100.00",castro,cd05b55fd9bc45609e5801379820e8e5.webp,Quebrado,0 meses,"R$ 111,100.00","R$ 4,629.17",R$ 0.00,24 meses,R$ 0.00,0 meses
+5,patricia,2023-10-09,"R$ 111,100.00","R$ 111,100.00",mota,,Disponível,8 meses,"R$ 74,066.67","R$ 6,943.75","R$ 37,033.33",16 meses,R$ 0.00,8 meses
+6,miss,2023-01-01,"R$ 111,100.00","R$ 111,100.00",fortune,,Disponível,0 meses,"R$ 111,100.00","R$ 4,444.00",R$ 0.00,25 meses,R$ 0.00,0 meses
+7,ashe,2023-01-01,"R$ 111,100.00","R$ 111,100.00",dolol,,Disponível,0 meses,"R$ 111,100.00","R$ 4,444.00",R$ 0.00,25 meses,R$ 0.00,0 meses
+8,rabanada,2023-01-01,"R$ 111,111.00","R$ 111,111.00",denatal,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+9,lulu,2023-12-01,"R$ 111,111.00","R$ 111,111.00",santos,,Disponível,10 meses,"R$ 64,814.75","R$ 7,936.50","R$ 46,296.25",14 meses,R$ 0.00,10 meses
+10,gugu,2023-01-01,"R$ 111,111.00","R$ 111,111.00",santos,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+11,computador,2023-01-01,"R$ 111,111.00","R$ 111,111.00",pessoal,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+12,celular,2023-01-01,"R$ 111,111.00","R$ 111,111.00",top,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+13,carteira,2023-01-01,"R$ 111,111.00","R$ 111,111.00",decouro,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+13,copo,2023-01-01,"R$ 111,111.00","R$ 111,111.00",fino,,Disponível,0 meses,"R$ 111,111.00","R$ 4,444.44",R$ 0.00,25 meses,R$ 0.00,0 meses
+14,elisa,2024-01-01,"R$ 111,111.00","R$ 111,111.00",sanches,,Disponível,11 meses,"R$ 60,185.12","R$ 8,547.00","R$ 50,925.88",13 meses,R$ 0.00,10 meses
+15,ioio,2024-01-01,"R$ 1,111.00","R$ 1,111.00",numberone,,Disponível,11 meses,R$ 601.79,R$ 85.46,R$ 509.21,13 meses,R$ 0.00,10 meses
+16,daniel,2024-01-01,"R$ 1,111.00","R$ 1,111.00",castro,816478326f2c4a68b1f2d847736bc954.jpeg,Disponível,11 meses,R$ 601.79,R$ 85.46,R$ 509.21,13 meses,R$ 0.00,10 meses
+17,dandan,2024-01-01,"R$ 1,111.00","R$ 1,111.00",santos,,Disponível,11 meses,R$ 601.79,R$ 85.46,R$ 509.21,13 meses,R$ 0.00,10 meses
+18,daniel,2024-01-01,"R$ 1,111.00","R$ 1,111.00",teste,,Disponível,263 meses,R$ 52.33,R$ 85.46,"R$ 1,058.67",13 meses,R$ 0.00,0 meses
+19,awdeasda,2023-12-12,"R$ 2,222.00","R$ 2,222.00",dasdas,,Disponível,10 meses,"R$ 1,296.17",R$ 158.71,R$ 925.83,14 meses,R$ 0.00,9 meses

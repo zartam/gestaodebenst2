@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Bens</title>
+</head>
+<body>
+    <h1>Bem-vindo à Gestão de Bens</h1>
+    
+    <ul>
+        <li><a href="{{ url_for('cadastro') }}">Cadastrar Bem</a></li>
+        <li><a href="{{ url_for('listar_bens') }}">Listar Bens</a></li>
+        <li><a href="{{ url_for('exportar', formato='csv') }}">Exportar para CSV</a></li>
+        <li><a href="{{ url_for('exportar', formato='json') }}">Exportar para JSON</a></li>
+    </ul>
+
+</body>
+</html>

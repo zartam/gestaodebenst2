@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nome": "daniel",
+        "data_compra": "2023-01-01",
+        "valor_compra": 1111.0,
+        "vida_util": 5,
+        "categoria": "castro",
+        "status": "Disponível",
+        "foto": "1b1a3d2020dc4509bf9b5a5435027e0e.jpeg",
+        "garantia_data": "2025-10-01",
+        "garantia_meses": 33,
+        "custo_manutencao": 0.0,
+        "custo_total": 1111.0
+    },
+    {
+        "id": 2,
+        "nome": "claudio",
+        "data_compra": "2023-01-01",
+        "valor_compra": 11110.0,
+        "vida_util": 3,
+        "categoria": "castro",
+        "status": "Aguardando Reparos",
+        "foto": null,
+        "garantia_data": "N/A",
+        "garantia_meses": 0,
+        "custo_manutencao": 0.0,
+        "custo_total": 11110.0
+    },
+    {
+        "id": 3,
+        "nome": "patricia",
+        "data_compra": "2023-01-01",
+        "valor_compra": 1111.0,
+        "vida_util": 10,
+        "categoria": "mota",
+        "status": "Disponível",
+        "foto": null,
+        "garantia_data": "2031-05-01",
+        "garantia_meses": 100,
+        "custo_manutencao": 0,
+        "custo_total": 1111.0
+    }
+]

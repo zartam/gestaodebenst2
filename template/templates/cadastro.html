@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Bem</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+        form { 
+            max-width: 500px; 
+            margin: auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        label { 
+            display: block; 
+            font-weight: bold; 
+            margin-top: 10px; 
+        }
+        input, select { 
+            display: block; 
+            width: 100%; 
+            padding: 8px; 
+            margin-top: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box;
+        }
+        button { 
+            background-color: #007bff; 
+            color: white; 
+            padding: 10px; 
+            border: none; 
+            margin-top: 15px; 
+            cursor: pointer; 
+            width: 100%; 
+            border-radius: 4px; 
+        }
+        button:hover { 
+            background-color: #0056b3; 
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+    <script>
+        // Função para limpar a formatação antes de enviar
+        function cleanCurrency() {
+            const valorCompraField = document.getElementById('valor_compra');
+            const custoManutencaoField = document.getElementById('custo_manutencao');
+            
+            if (valorCompraField) {
+                let value = valorCompraField.value.replace(/\D/g, ''); // Remove qualquer caractere não numérico
+                valorCompraField.value = value; // Deixa apenas os números
+            }
+            
+            if (custoManutencaoField) {
+                let value = custoManutencaoField.value.replace(/\D/g, ''); // Remove qualquer caractere não numérico
+                custoManutencaoField.value = value; // Deixa apenas os números
+            }
+            
+            return true;
+        }
+
+        // Função para validar o formulário
+        function validateForm() {
+            let isValid = true;
+            
+            // Validar Nome
+            const nome = document.getElementById('nome_bem');
+            const nomeError = document.getElementById('nome-error');
+            if (!nome.value.trim()) {
+                nomeError.style.display = 'block';
+                nome.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                nomeError.style.display = 'none';
+                nome.style.borderColor = '#ccc';
+            }
+            
+            // Validar Data
+            const data = document.getElementById('data_compra');
+            const dataError = document.getElementById('data-error');
+            if (!data.value) {
+                dataError.style.display = 'block';
+                data.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                dataError.style.display = 'none';
+                data.style.borderColor = '#ccc';
+            }
+            
+            // Validar Categoria
+            const categoria = document.getElementById('categoria');
+            const categoriaError = document.getElementById('categoria-error');
+            if (!categoria.value.trim()) {
+                categoriaError.style.display = 'block';
+                categoria.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                categoriaError.style.display = 'none';
+                categoria.style.borderColor = '#ccc';
+            }
+            
+            // Validar Valor de Compra
+            const valorCompra = document.getElementById('valor_compra');
+            const valorError = document.getElementById('valor-error');
+            if (!valorCompra.value.trim() || valorCompra.value === '0') {
+                valorError.style.display = 'block';
+                valorCompra.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                valorError.style.display = 'none';
+                valorCompra.style.borderColor = '#ccc';
+            }
+            
+            // Validar Vida Útil
+            const vidaUtil = document.getElementById('vida_util');
+            const vidaUtilError = document.getElementById('vida-util-error');
+            if (!vidaUtil.value || vidaUtil.value <= 0) {
+                vidaUtilError.style.display = 'block';
+                vidaUtil.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                vidaUtilError.style.display = 'none';
+                vidaUtil.style.borderColor = '#ccc';
+            }
+            
+            return isValid;
+        }
+
+        // Função para inicializar os campos
+        window.onload = function() {
+            const valorCompra = document.getElementById('valor_compra');
+            const custoManutencao = document.getElementById('custo_manutencao');
+            
+            valorCompra.value = '';
+            custoManutencao.value = '';
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Cadastrar Novo Bem</h1>
+    <form action="/cadastro" method="post" enctype="multipart/form-data" onsubmit="return validateForm() && cleanCurrency()">
+        <label for="nome_bem">Nome do Bem:</label>
+        <input type="text" id="nome_bem" name="nome_bem">
+        <div id="nome-error" class="error-message">Por favor, insira o nome do bem</div>
+
+        <label for="data_compra">Data da Compra:</label>
+        <input type="date" id="data_compra" name="data_compra">
+        <div id="data-error" class="error-message">Por favor, selecione a data de compra</div>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria">
+        <div id="categoria-error" class="error-message">Por favor, insira a categoria</div>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Disponível">Disponível</option>
+            <option value="Vendido">Vendido</option>
+            <option value="Alugado">Alugado</option>
+            <option value="Quebrado">Quebrado</option>
+            <option value="Em Manutenção">Em Manutenção</option>
+            <option value="Aguardando Reparos">Aguardando Reparos</option>
+        </select>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <label for="valor_compra">Valor de Compra:</label>
+        <input type="text" id="valor_compra" name="valor_compra">
+        <div id="valor-error" class="error-message">Por favor, insira um valor de compra válido</div>
+
+        <label for="vida_util">Vida Útil (anos):</label>
+        <input type="number" id="vida_util" name="vida_util" min="1">
+        <div id="vida-util-error" class="error-message">Por favor, insira uma vida útil válida</div>
+
+        <label for="garantia">Garantia (meses):</label>
+        <input type="number" id="garantia" name="garantia" min="0" step="1" value="0">
+
+        <label for="custo_manutencao">Custo de Manutenção:</label>
+        <input type="text" id="custo_manutencao" name="custo_manutencao">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <a href="/" style="display: block; text-align: center; margin-top: 20px;">Voltar para Home</a>
+</body>
+</html>
